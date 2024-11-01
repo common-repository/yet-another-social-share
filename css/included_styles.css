@@ -1,0 +1,157 @@
+/*!
+ *  Font Awesome 4.6.3 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+/* FONT PATH
+ * -------------------------- */
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../font-awesome/fontawesome-webfont.eot?v=4.6.3');
+    src: url('../font-awesome/fontawesome-webfont.eot?#iefix&v=4.6.3') format('embedded-opentype'), url('../font-awesome/fontawesome-webfont.woff2?v=4.6.3') format('woff2'), url('../font-awesome/fontawesome-webfont.woff?v=4.6.3') format('woff'), url('../font-awesome/fontawesome-webfont.ttf?v=4.6.3') format('truetype'), url('../font-awesome/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.yass-social-div .fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 16px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-width: 45px;
+    text-align: center;
+}
+
+/* makes the font 33% larger relative to the icon container */
+.yass-social-div .fa-2x {
+    font-size: 22px !important;
+    line-height: 0.75em;
+    vertical-align: -15%;
+    min-width: 50px;
+}
+
+.yass-social-div .fa-3x {
+    font-size: 30px !important;
+    min-width: 60px;
+}
+
+/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+   readers do not read off random characters that represent icons */
+
+.yass-social-div .fa-facebook:before {
+    content: "\f09a";
+}
+
+.yass-social-div .fa-twitter:before {
+    content: "\f099";
+}
+
+.yass-social-div .fa-google-plus:before {
+    content: "\f1a0";
+}
+
+.yass-social-div .fa-pinterest:before {
+    content: "\f0d2";
+}
+
+.yass-social-div .fa-linkedin:before {
+    content: "\f0e1";
+}
+
+.yass-social-div .fa-whatsapp:before {
+    content: "\f232";
+}
+
+.yass-social-div .fa-facebook {
+    color: white;
+    background-color: #3B5998;
+}
+
+.yass-social-div .fa-twitter {
+    color: white;
+    background-color: #58CEF2;
+}
+
+.yass-social-div .fa-google-plus {
+    color: white;
+    background-color: #DB4437;
+}
+
+.yass-social-div .fa-pinterest {
+    color: white;
+    background-color: #BB0F23;
+}
+
+.yass-social-div .fa-linkedin {
+    color: white;
+    background-color: #1B86BC;
+}
+
+.yass-social-div .fa-whatsapp {
+    color: white;
+    background-color: #00E676;
+}
+
+/*
+ *  YASS Frontend Plugin Styles
+ *
+ */
+.yass-social-div {
+    padding: 10px;
+}
+
+.yass-social-div a,
+.entry-title .yass-social-div  a{
+    color: transparent;
+}
+
+.yass-icon-default {
+    padding: 15px !important;
+    border-radius: 100%;
+    margin: 1px;
+    text-decoration: none;
+}
+
+div.yass-float-left > .yass-social-div {
+    max-width: 75px;
+    position: fixed;
+    left: 10px;
+    bottom: 50px;
+    z-index: 999999999;
+}
+
+.yass-featured-image-overlay {
+    position: relative;
+}
+
+.yass-featured-image-overlay .yass-social-div {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: .5;
+    transition: opacity .5s;
+}
+
+.yass-featured-image-overlay .yass-social-div:hover {
+    opacity: 1;
+}
+
+/**
+ * Don't display in header, footer, comments or sidebar
+ */
+aside .yass-social-div,
+footer .yass-social-div,
+.site-header .yass-social-div,
+.widget .yass-social-div,
+.comments-area .yass-social-div {
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+    div.yass-float-left > .yass-social-div {
+        left: 0;
+        padding: 0;
+    }
+}
+
